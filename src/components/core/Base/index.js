@@ -8,7 +8,7 @@ export default function Base(props) {
   return (
     <>
     <Header />
-      <div>
+      <div className="main">
         {children}
       </div>
     </>

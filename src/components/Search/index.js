@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import './styles.scss';
+import { client } from '../../App';
 
 export default function Search(props) {
 
@@ -9,18 +10,23 @@ export default function Search(props) {
     const {
         title,
         placeholder = 'Search...',
+        setResults
     } = props;
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        console.log(`Submit: ${query}`)
+        const res = await client.get("", [
+            ["q", query],
+            ["searchType", "image"]
+        ]);
+
+        setResults(res.data);
         setQuery("");
     }
 
     const handleInput = (e) => {
         const input = e.target.value
-        console.log(input)
         setQuery(input);
     }
 
