@@ -1,0 +1,23 @@
+/* Main container for the page contents */
+.container {
+  display: grid;
+  gap: 10px;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 0.5fr 1fr 0.5fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  outline: none;
+  width: 100vw;
+  height: 100vh;
+
+  &__main {
+    grid-area: main;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      ". . .";
+  }
+
+}
