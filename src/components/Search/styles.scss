@@ -1,19 +1,20 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .search {
+    padding: 16px;
 
-  &__input {
-    width: 100%;
-    margin: auto;
-    padding: 16px 8px 16px 48px;
-    outline: none;
-    font-size: 1.5em;
-    background: $secondary;
-    border: 1px solid $primary;
-    border-radius: 4px;
-  }
+    &__input {
+        //width: 100%;
+        margin: auto;
+        padding: 16px 8px;
+        outline: none;
+        font-size: 1.5em;
+        background: $secondary;
+        border: 1px solid $primary;
+        border-radius: 4px;
+    }
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }

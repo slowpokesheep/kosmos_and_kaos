@@ -11,6 +11,7 @@ export default function Home(props) {
       <div className="container">
         <div className="container__header">
           <Search
+            title={"Myndaleit"}
             placeholder={"Leitarorð"}
           />
         </div>

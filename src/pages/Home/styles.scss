@@ -9,8 +9,13 @@
     "main"
     "footer";
   outline: none;
-  width: 100vw;
-  height: 100vh;
+  //width: 100vw;
+  //height: 100vh;
+  padding: 1.5rem;
+
+  &__header {
+    display: flexbox;
+  }
 
   &__main {
     grid-area: main;

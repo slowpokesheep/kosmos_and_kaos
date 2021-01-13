@@ -7,7 +7,8 @@ export default function Search(props) {
     const [query, setQuery] = useState(""); // Search query
 
     const {
-        placeholder,
+        title,
+        placeholder = 'Search...',
     } = props;
 
     const handleSubmit = (e) => {
@@ -24,8 +25,11 @@ export default function Search(props) {
     }
 
     return (
-        <>
-            <form className="search" onSubmit={handleSubmit}>
+        <div className="search">
+            {title && <h1 className="">
+                {title}
+            </h1>}
+            <form className="search_form" onSubmit={handleSubmit}>
                 <input
                     className="search__input"
                     type="text"
@@ -34,6 +38,6 @@ export default function Search(props) {
                     value={query}
                 />
             </form>
-        </>
+        </div>
     );
 }
