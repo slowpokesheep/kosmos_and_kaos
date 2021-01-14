@@ -17,10 +17,33 @@
         display: flex;
         justify-content: space-around;
 
+        @media (max-width: 600px) {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         h3 {
             font-weight: bold;
             line-height: 1.5em;
         }
+    }
+
+    &__innerContent {
+        width: 200px;
+    }
+
+    &__company {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 0;
     }
 
     a:link,

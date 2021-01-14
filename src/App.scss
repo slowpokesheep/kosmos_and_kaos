@@ -11,7 +11,7 @@ $text_footer: white;
 $background_footer:  rgb(38, 38, 38);
 
 html {
-  min-height: 100%;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
