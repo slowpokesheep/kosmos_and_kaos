@@ -2,23 +2,29 @@
 .container {
   display: grid;
   gap: 10px;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 0.15fr 1fr 0.15fr;
   grid-template-areas:
     "header"
     "main"
     "footer";
   outline: none;
-  //width: 100vw;
-  //height: 100vh;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 8rem 1.5rem;
 
   &__header {
     display: flexbox;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   &__main {
     grid-area: main;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__footer {
+    grid-area: footer;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
 }

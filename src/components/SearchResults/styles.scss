@@ -1,15 +1,29 @@
+@import "../../App.scss";
+
 .results {
     display: grid;
     gap: 10px;
-    //grid-auto-columns: 1fr, 1fr, 1fr;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
+        
+        border: 1px solid $primary;
+        border-radius: 4px;
+
         img {
-            //
+            max-height: 100%;
         }
     }
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 16px;
 }

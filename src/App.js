@@ -10,13 +10,11 @@ export const client = new Client();
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Switch>
-          <Route exact path='/' component={Home} />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
+    </Router>
   );
 }
 

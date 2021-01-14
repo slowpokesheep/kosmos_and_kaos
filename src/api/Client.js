@@ -1,13 +1,10 @@
 export default class Client {
-  // Todo seperate backend or temporary backend here
   constructor() {
-    this.apiUrl = 'https://content.googleapis.com/customsearch/v1?cx=001361074102112665899%3Ap7mybnrloug'
-    this.apiKey = 'AIzaSyCefJfjoi6Qx4o9UL7ruz8gaQ_MH71e7Ck'
+    this.apiUrl = process.env.REACT_APP_API_URL;
+    this.apiKey = process.env.REACT_APP_API_KEY;
   }
 
   async get(resource="", params=null) {
-    //&q=forritun&searchType=image&key=APIKEY'
-
     try {
       let url = this.apiUrl;
 
@@ -18,8 +15,6 @@ export default class Client {
         urlParams.append('key', this.apiKey);
         url += `&${urlParams.toString()}`
       }
-
-      console.log(`url = ${url}`)
 
       const response = await fetch(url);
 

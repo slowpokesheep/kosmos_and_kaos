@@ -5,13 +5,53 @@ $secondary: #F3F7FF;
 // Text
 $text_normal: #474747;
 $text_faded: #98A4C5;
+$text_hover: #26a5d4;
+
+$text_footer: white;
+$background_footer:  rgb(38, 38, 38);
+
+html {
+  min-height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: $text_normal;
+
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: $text_normal;
+}
+
+a:hover {
+  color: $text_hover;
 }

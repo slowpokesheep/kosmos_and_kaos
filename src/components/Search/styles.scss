@@ -1,8 +1,17 @@
 @import "../../App.scss";
 
 .search {
+
+    &__title {
+        padding: 1rem 0;
+    }
+
+    &__form {
+        padding: 1rem 0;
+    }
+
     &__input {
-        //width: 100%;
+        min-width: 500px;
         margin: auto;
         padding: 16px 8px;
         outline: none;

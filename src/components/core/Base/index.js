@@ -1,16 +1,16 @@
 import React from 'react';
 
 import Header from '../Header';
+import Footer from '../Footer';
 
 export default function Base(props) {
   const { children } = props;
 
   return (
     <>
-    <Header />
-      <div className="main">
-        {children}
-      </div>
+      <Header />
+      {children}
+      <Footer />
     </>
   )
 }
