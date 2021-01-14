@@ -58,10 +58,18 @@ export default function Search(props) {
             ["searchType", "image"]
         ]);
 
+        // Checking http response
         if (res.ok) {
             setResults(res.data);
-            setItems(res.data.items);
             setTotalResults(res.data.searchInformation.totalResults);
+            
+            // http response may be ok with no results, this ensures that the check
+            // items.length > 0 doesn't error
+            if (res.data.searchInformation.totalResults === "0") {
+                setItems([]);
+            } else {
+                setItems(res.data.items);
+            }
         }
         else {
             setResults("");
