@@ -33,7 +33,7 @@ export default function Footer(props) {
                             </li>
                             <li>666-0369</li>
                             <li>
-                                <a href="https://github.com/slowpokesheep">Github</a>
+                                <a href="https://github.com/slowpokesheep/kosmos_and_kaos">Github</a>
                             </li>
                         </ul>
                     </div>

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loader-spinner';
 
 import './styles.scss';
+import search from './search.svg';
 import { client } from '../../App';
-
 import SearchResults from '../../components/SearchResults'
 
 export default function Search(props) {
@@ -99,6 +99,7 @@ export default function Search(props) {
                         {title}
                     </h1>}
                     <form className="search__form" onSubmit={handleSubmit}>
+                        <img className="search__icon" src={search} onClick={handleSubmit}/>
                         <input
                             className="search__input"
                             type="text"
