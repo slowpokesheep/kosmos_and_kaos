@@ -99,7 +99,7 @@ export default function Search(props) {
                         {title}
                     </h1>}
                     <form className="search__form" onSubmit={handleSubmit}>
-                        <img className="search__icon" src={search} onClick={handleSubmit}/>
+                        <img className="search__icon" src={search} alt="Search icon" onClick={handleSubmit}/>
                         <input
                             className="search__input"
                             type="text"

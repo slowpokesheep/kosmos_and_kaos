@@ -9,11 +9,9 @@
     &__form {
         max-width: 500px;
         position: relative;
-        //padding: 1rem 0;
     }
 
     &__icon {
-        //height: 32px;
         height: 100%;
         padding: 16px 0;
         left: 12px;
@@ -35,7 +33,7 @@
         border: 1px solid $primary;
         border-radius: 4px;
 
-        @media (max-width: 600px) {
+        @media (max-width: $min_width) {
             width: 100%;
             min-width: 100px;
         }

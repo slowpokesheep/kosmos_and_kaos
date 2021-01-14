@@ -17,7 +17,7 @@
         display: flex;
         justify-content: space-around;
 
-        @media (max-width: 600px) {
+        @media (max-width: $min_width) {
             flex-direction: column;
             justify-content: space-between;
         }

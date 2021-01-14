@@ -1,5 +1,5 @@
 // Colours
-$primary: #da4228;
+$primary: rgb(38, 38, 38);
 $secondary: #F3F7FF;
 
 // Text
@@ -7,8 +7,12 @@ $text_normal: #474747;
 $text_faded: #98A4C5;
 $text_hover: #26a5d4;
 
+// Footer
 $text_footer: white;
 $background_footer:  rgb(38, 38, 38);
+
+// Media queries
+$min_width: 600px;
 
 html {
   box-sizing: border-box;
